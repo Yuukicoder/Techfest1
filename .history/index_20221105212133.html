@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.css"
+    />
+  </head>
+  <body>
+    <div id="scroll-progress"></div>
+    <div id="navbar">
+      <img src="Image/logo1.png" alt="" class="logo" />
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Area</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a class="dropt" href="#">Country</a>
+          <a class="dropt" href="#">City</a>
+          <a class="dropt" href="#">Province</a>
+        </div>
+      </div>
+      <a class="cube" href="#trending">Trending</a>
+      <a class="cube" href="#review">Review</a>
+      <a class="cube" href="#reference">Reference</a>
+      <a href="portfolio.html">
+        <img src="Image/profile__user1.jpg" alt="" class="avatar" />
+      </a>
+      <div class="search-box">
+        <input
+          class="search-txt"
+          id="searchbar"
+          type="text"
+          name=""
+          placeholder="Type to Search"
+        />
+        <a href="" class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </div>
+    </div>
+    <!--=================================== HEADER ======================================================-->
+    <div class="box1">
+      <!-- <div class="searchbar"></div> -->
+      <!-- <div class="avatar"></div> -->
+      <!-- <div class="hamburger"></div> -->
+      <h1>Let's Travel with <span class="name">Lefago</span></h1>
+    </div>
+    <!--=================================== BODY ======================================================-->
+
+    <div class="box2">
+      <!----------------------------------- WAVE ---------------------------------------------------------->
+
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+      <!----------------------------------- NEW ---------------------------------------------------------->
+      <div class="line line1"><span class="new">The best photos</span></div>
+      <div class="image-mosaic">
+        <div
+          class="card card-tall card-wide"
+          style="background-image: url('https://picsum.photos/id/564/1200/800')"
+        >
+          <figcaption>Melbourne,Australia</figcaption>
+        </div>
+        <div
+          class="card card-tall" 
+          style="background-image: url('https://picsum.photos/id/566/800/530')"
+        >
+          <figcaption>caobang,VIETNAM</figcaption>
+        </div>
+        <a href="landscape.html">
+          <div
+            class="card"
+            style="background-image: url('https://picsum.photos/id/575/800/530')"
+          >
+            <figcaption>Dalat,vietnam</figcaption>
+          </div>
+        </a>
+        <div
+          class="card"
+          style="background-image: url('https://picsum.photos/id/626/800/530')"
+        >
+          <figcaption>nghean,vietnam</figcaption>
+        </div>
+        <div
+          class="card"
+          style="background-image: url('https://picsum.photos/id/667/800/530')"
+        >
+          <figcaption>Shanghai,China</figcaption>
+        </div>
+        <div
+          class="card"
+          style="background-image: url('https://picsum.photos/id/678/800/530')"
+        >
+          <figcaption>Okinawa,Japan</figcaption>
+        </div>
+        <div
+          class="card card-wide"
+          style="background-image: url('https://picsum.photos/id/695/800/530')"
+        >
+          <figcaption>CanTho,VIETNAM</figcaption>
+        </div>
+      </div>
+      <!----------------------------------- TRENDING ---------------------------------------------------------->
+
+      <div class="line line2"><span class="trending" id="trending">Trending</span></div>
+
+      <div class="group1">
+        <div class="card2">
+          <img
+            src="https://images.unsplash.com/photo-1473625247510-8ceb1760943f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          />
+          <h3>Yuuki</h3>
+          <div class="focus-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+              <a href="#">Read more</a>
+            </p>
+          </div>
+        </div>
+        <div class="card2">
+          <img
+            src="https://images.unsplash.com/photo-1520322082799-20c1288346e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80"
+          />
+          <h3>Bình An</h3>
+          <div class="focus-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+              <a href="#">Read more</a>
+            </p>
+          </div>
+        </div>
+        <div class="card2">
+          <img
+            src="https://images.unsplash.com/photo-1522163182402-834f871fd851?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2xpbWJpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          />
+          <h3>Lee ChongWei</h3>
+          <div class="focus-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+              <a href="#">Read more</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!----------------------------------- REVIEW ---------------------------------------------------------->
+      <div class="line line3"><span class="review">Review</span></div>
+
+      <div class="review" id="review">
+        <main class="site-content">
+          <section class="video-area">
+            <div class="wrapper">
+              <header class="video-header">
+                <h2 class="video-title">Hello Melbourne</h2>
+              </header>
+
+              <div class="video-column">
+                <div class="video-player">
+                  <button id="btnReplay" class="btn-replay">
+                    <span class="fontawesome-refresh"></span>
+                  </button>
+
+                  <video
+                    id="video"
+                    class="video"
+                    src="./Video/video1.webm"
+                    type="video/mp4"
+                    poster="https://i.ytimg.com/vi/TXU4hFD-nMA/0.jpg"
+                    preload="none"
+                  ></video>
+
+                  <div class="video-controls">
+                    <button id="btnState">
+                      <span class="fontawesome-play"></span>
+                    </button>
+
+                    <span id="timePlayed">00:00</span>
+
+                    <div class="video-bars">
+                      <input
+                        type="range"
+                        id="barSeeker"
+                        class="bar-seeker"
+                        value="0"
+                        min="0"
+                        max="100"
+                        step="0.1"
+                      />
+                      <progress
+                        value="0"
+                        max="100"
+                        step="0.1"
+                        id="barProgress"
+                        class="bar-progress"
+                      ></progress>
+                      <progress
+                        value="0"
+                        max="100"
+                        step="0.1"
+                        id="barBuffer"
+                        class="bar-buffer"
+                      ></progress>
+                    </div>
+
+                    <div id="timeBubble" class="time-bubble">00:00</div>
+
+                    <span id="timeDuration">00:00</span>
+
+                    <button id="btnSound" class="btn-sound">
+                      <span class="fontawesome-volume-up"></span>
+                    </button>
+                    <input
+                      type="range"
+                      id="sliderVolume"
+                      class="slider-volume"
+                      value="10"
+                      min="0"
+                      max="10"
+                    />
+                  </div>
+                </div>
+
+                <div class="video-info">
+                  <div class="description">
+                    <p>
+                      Tiếp tục cùng Yuuki trên hành trình thăm thú nước ÚC nhé
+                      cả nhà ơi. Ghé thăm cửa tiệm H&M siêu siêu đẹp, ăn thử các
+                      món ăn châu Á cực ngon ở Melbourne và còn thăm trường đại
+                      học RMIT ngay trung tâm thành phố và thư viện Victoria
+                      State không thể không ghé thăm nữa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="playlist" class="playlist">
+                <header class="next">Coming Next</header>
+
+                <a href="Video/video2.mp4" class="next-video">
+                  <img src="https://i.ytimg.com/vi/EHKa0nv63lw/0.jpg" alt="" />
+                  <h3 class="single-video-title">24h ăn gì ở thành phố Vinh</h3>
+                  <p class="single-video-info">Mỏ khoét Hà Nội</p>
+                  <span class="single-video-des">
+                    Chẳng có chi ngoài một chiếc bụng luôn luôn đói cùng một tâm
+                    hồn ăn uống bất tận. Cùng Mỏ Khoét Hà Nội tham gia hành
+                    trình khám phá 7749 món ăn ngon trên cuộc đời này nhé các
+                    bạn gì ơi!!!
+                  </span>
+                </a>
+
+                <a href="Video/video3.mp4" class="next-video">
+                  <img src="https://i.ytimg.com/vi/1NtV5KgRo0c/0.jpg" alt="" />
+                  <h3 class="single-video-title">
+                    Tìm về Hà Giang: Tuyệt tác thiên nhiên nơi núi rừng Tây Bắc
+                  </h3>
+                  <p class="single-video-info">The Hippy Family</p>
+                  <span class="single-video-des">
+                    Làm quần quật cả tháng mới để đi Hà Giang nên giờ mới có
+                    clip tiếp đây ạ. Lần này nhà mình quay lại Hà Giang, định
+                    cho cả bé Sam đi cùng mà cung phượt này chắc phải lớn xíu
+                    mới đi được.
+                  </span>
+                </a>
+
+                <a href="Video/video4.mp4" class="next-video">
+                  <img src="https://i.ytimg.com/vi/XdpjldY8Be8/0.jpg" alt="" />
+                  <h3 class="single-video-title">
+                    Kinh nghiệm du lịch Sapa 3 ngày 2 đêm tự túc dễ đi nhất
+                  </h3>
+                  <p class="single-video-info">Blog du lịch</p>
+                  <span class="single-video-des"
+                    >Mùa hè bắt đầu đến là lúc không khí oi bức bắt đầu xuất
+                    hiện. Đây cũng chính là lúc thích hợp để du lịch Sapa tìm
+                    cái mát mẻ se lạnh giữa hè. Thay cái oi nóng hằng ngày của
+                    mùa hè mà được thư giãn trong làn sương lạnh Sapa mỗi sáng
+                    thì còn gì bằng đúng không? Bạn đã từng đi du lịch Sapa
+                    chưa, nếu chưa đi thì hãy cùng #BlogDuLịch bật mí những kinh
+                    nghiệm xương máu khi đi du lịch Sapa 3 ngày 2 đêm tự túc
+                    nhé.
+                  </span>
+                </a>
+
+                <a href="Video/video1.webm" class="next-video played-video">
+                  <img src="https://i.ytimg.com/vi/TXU4hFD-nMA/0.jpg" alt="" />
+                  <h3 class="single-video-title">Hello Melbourne</h3>
+                  <p class="single-video-info">Yuuki</p>
+                  <span class="single-video-des"
+                    >Tiếp tục cùng Yuuki trên hành trình thăm thú nước ÚC nhé cả
+                    nhà ơi. Ghé thăm cửa tiệm H&M siêu siêu đẹp, ăn thử các món
+                    ăn châu Á cực ngon ở Melbourne và còn thăm trường đại học
+                    RMIT ngay trung tâm thành phố và thư viện Victoria State
+                    không thể không ghé thăm nữa.
+                  </span>
+                </a>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+        <!----------------------------------- Reference ---------------------------------------------------------->
+        <div class="line line4"><span class="Reference">Reference</span></div>
+
+        <div class="card3" id="reference">
+          <img
+            class="user__img"
+            src="https://images.unsplash.com/photo-1503457574462-bd27054394c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="user__info">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="user__avatar"
+            />
+            <a style="text-decoration: none;" href="profile__user.html">
+              <div class="user__name">Alina</div>
+            </a>
+          </div>
+          <div class="user__icon">
+            <i class="fa-solid fa-heart"></i><span class="user__number"> 16.5k </span>
+            <i class="fa-solid fa-eye"></i><span class="user__number"> 27.3k </span>
+          </div>
+          
+        </div>
+        <div class="card3">
+          <img
+            class="user__img"
+            src="https://images.unsplash.com/photo-1657214059493-986710bc4788?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8OHx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="user__info">
+            <img
+              src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="user__avatar"
+            />
+            <div class="user__name">Richard Vokik</div>
+          </div>
+          <div class="user__icon">
+            <i class="fa-solid fa-heart"></i><span class="user__number"> 6.5k </span>
+            <i class="fa-solid fa-eye"></i><span class="user__number"> 6.5k </span>
+          </div>
+          
+        </div>
+        <div class="card3">
+          <img
+            class="user__img"
+            src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="user__info">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="user__avatar"
+            />
+            <div class="user__name">Alina</div>
+          </div>
+          <div class="user__icon">
+            <i class="fa-solid fa-heart"></i><span class="user__number"> 6.5k </span>
+            <i class="fa-solid fa-eye"></i><span class="user__number"> 6.5k </span>
+          </div>
+          
+        </div>
+        <div class="card3">
+          <img
+            class="user__img"
+            src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="user__info">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="user__avatar"
+            />
+            <div class="user__name">Alina</div>
+          </div>
+          <div class="user__icon">
+            <i class="fa-solid fa-heart"></i><span class="user__number"> 6.5k </span>
+            <i class="fa-solid fa-eye"></i><span class="user__number"> 6.5k </span>
+          </div>
+          
+        </div>
+        <div class="card3">
+          <img
+            class="user__img"
+            src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="user__info">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="user__avatar"
+            />
+            <div class="user__name">Alina</div>
+          </div>
+          <div class="user__icon">
+            <i class="fa-solid fa-heart"></i><span class="user__number"> 6.5k </span>
+            <i class="fa-solid fa-eye"></i><span class="user__number"> 6.5k </span>
+          </div>
+          
+        </div>
+        <div class="card3">
+          <img
+            class="user__img"
+            src="https://images.unsplash.com/photo-1659535832621-4ef57c0e141b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MzV8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="user__info">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="user__avatar"
+            />
+            <div class="user__name">Alina</div>
+          </div>
+          <div class="user__icon">
+            <i class="fa-solid fa-heart"></i><span class="user__number"> 6.5k </span>
+            <i class="fa-solid fa-eye"></i><span class="user__number"> 6.5k </span>
+          </div>
+          
+        </div>
+        <div class="card3">
+          <img
+            class="user__img"
+            src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="user__info">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="user__avatar"
+            />
+            <div class="user__name">Alina</div>
+          </div>
+          <div class="user__icon">
+            <i class="fa-solid fa-heart"></i><span class="user__number"> 6.5k </span>
+            <i class="fa-solid fa-eye"></i><span class="user__number"> 6.5k </span>
+          </div>
+          
+        </div>
+        <div class="card3">
+          <img
+            class="user__img"
+            src="https://images.unsplash.com/photo-1523287281576-5b596107a6ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGNhbm9lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="user__info">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="user__avatar"
+            />
+            <div class="user__name">Alina</div>
+          </div>
+          <div class="user__icon">
+            <i class="fa-solid fa-heart"></i><span class="user__number"> 6.5k </span>
+            <i class="fa-solid fa-eye"></i><span class="user__number"> 6.5k </span>
+          </div>
+          
+        </div>
+        <div class="card3">
+          <img
+            class="user__img"
+            src="https://images.unsplash.com/photo-1588152850700-c82ecb8ba9b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y291bnRyeXNpZGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="user__info">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="user__avatar"
+            />
+            <div class="user__name">Alina</div>
+          </div>
+          <div class="user__icon">
+            <i class="fa-solid fa-heart"></i><span class="user__number"> 6.5k </span>
+            <i class="fa-solid fa-eye"></i><span class="user__number"> 6.5k </span>
+          </div>
+          
+        </div>
+        <div class="card3">
+          <img
+            class="user__img"
+            src="https://images.unsplash.com/photo-1508693926297-1d61ee3df82a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FuYWRhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="user__info">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="user__avatar"
+            />
+            <div class="user__name">Alina</div>
+          </div>
+          <div class="user__icon">
+            <i class="fa-solid fa-heart"></i><span class="user__number"> 6.5k </span>
+            <i class="fa-solid fa-eye"></i><span class="user__number"> 6.5k </span>
+          </div>
+          
+        </div>
+        <div class="card3">
+          <img
+            class="user__img"
+            src="https://images.unsplash.com/photo-1563299796-17596ed6b017?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGNhbXBpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="user__info">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="user__avatar"
+            />
+            <div class="user__name">Alina</div>
+          </div>
+          <div class="user__icon">
+            <i class="fa-solid fa-heart"></i><span class="user__number"> 6.5k </span>
+            <i class="fa-solid fa-eye"></i><span class="user__number"> 6.5k </span>
+          </div>
+          
+        </div>
+        <div class="card3">
+          <img
+            class="user__img"
+            src="https://images.unsplash.com/photo-1591017403286-fd8493524e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8YmVhY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="user__info">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="user__avatar"
+            />
+            <div class="user__name">Alina</div>
+          </div>
+          <div class="user__icon">
+            <i class="fa-solid fa-heart"></i><span class="user__number"> 6.5k </span>
+            <i class="fa-solid fa-eye"></i><span class="user__number"> 6.5k </span>
+          </div>
+          
+        </div>
+        <div class="card3">
+          <img
+            class="user__img"
+            src="https://images.unsplash.com/photo-1587502537147-2ba64a62e3d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MjJ8fGxhbmRzY2FwZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="user__info">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="user__avatar"
+            />
+            <div class="user__name">Alina</div>
+          </div>
+          <div class="user__icon">
+            <i class="fa-solid fa-heart"></i><span class="user__number"> 6.5k </span>
+            <i class="fa-solid fa-eye"></i><span class="user__number"> 6.5k </span>
+          </div>
+          
+        </div>
+        <div class="card3">
+          <img
+            class="user__img"
+            src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="user__info">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="user__avatar"
+            />
+            <div class="user__name">Alina</div>
+          </div>
+          <div class="user__icon">
+            <i class="fa-solid fa-heart"></i><span class="user__number"> 6.5k </span>
+            <i class="fa-solid fa-eye"></i><span class="user__number"> 6.5k </span>
+          </div>
+          
+        </div>
+    </div>
+    </div>
+    <!--=================================== FOOTER ======================================================-->
+
+    <div class="box3">
+      <footer>
+        <div class="container">
+            <!--Bắt Đầu Nội Dung Giới Thiệu-->
+            <div class="noi-dung about">
+                <h2>About us</h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium dolores alias ipsa vel hic
+                   tempore exercitationem ipsam explicabo repudiandae ut consectetur qui, earum at nostrum perspiciatis
+                   asperiores necessitatibus facilis esse.
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia id possimus quibusdam nihil earum in
+                   provident enim animi commodi quisquam! Molestiae cupiditate mollitia pariatur error ea, debitis
+                   eaque quo dolorum.</p>
+               
+            </div>
+            <!--Kết Thúc Nội Dung Giới Thiệu-->
+            <!--Bắt Đầu Nội Dung Đường Dẫn-->
+            <div class="noi-dung links">
+                <h2>Links </h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Trending </a></li>
+                    <li><a href="#">Preference</a></li>
+                    <li><a href="#">Lefashop</a></li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Đường Dẫn-->
+            <!--Bắt Đâu Nội Dung Liên Hệ-->
+            <div class="noi-dung contact">
+                <h2>Contact</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>Thành phố Vinh, Nghệ An, Việt Nam</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a href="#">+84 011010101</a>
+                           
+                    </li>
+                    <li><img src="Image/qr3.png" alt=""></li>
+                   
+                   
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

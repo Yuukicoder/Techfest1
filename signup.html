@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <title>Signup</title>
+  </head>
+  <body>
+    <div id="scroll-progress"></div>
+    <div class="box">
+      <div class="signup">
+        <!-- ======================================HEADING=============================================================== -->
+        <div class="signup__heading">Create account</div>
+
+        <!-- ======================================SIGNIN=============================================================== -->
+
+        <p class="signup__already">
+          Already have an account ? <a href="#" class="signup__link">Sign in</a>
+        </p>
+        <!-- =======================================NAME+PASSWORD============================================================== -->
+
+        <form action="#" class="signup__form">
+          <div class="form__group form__group--2">
+            <input type="text" class="form__input" placeholder="Name" />
+            <input type="text" class="form__input" placeholder="Password" />
+          </div>
+          <!-- =======================================EMAIL============================================================== -->
+
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Email" />
+          </div>
+          <!-- ======================================SVG CHECKBOX=============================================================== -->
+
+          <svg class="checkbox-symbol">
+            <symbol id="check" viewbox="0 0 12 10">
+              <polyline
+                points="1.5 6 4.5 9 10.5 1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></polyline>
+            </symbol>
+          </svg>
+
+          <div class="checkbox-container">
+            <input class="checkbox-input" id="apples" type="checkbox" />
+            <label class="checkbox" for="apples">
+              <span>
+                <svg width="12px" height="10px">
+                  <use xlink:href="#check"></use>
+                </svg>
+              </span>
+              <span>
+                I agree to the
+                <a href="#" class="signup__link">Term of service</a>
+              </span>
+            </label>
+          </div>
+          <!-- ======================================BUTTON SIGNUP=============================================================== -->
+
+          <div class="form__group">
+            <div class="button-border">
+              <form action="index.html">
+                <a href="index.html" class="button"><span> Sign up </span></a>
+              </form>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- ===========================================IMAGE========================================================== -->
+
+      <img src="Image/signup2.png" alt="anh1" />
+      <!-- ===================================================================================================== -->
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

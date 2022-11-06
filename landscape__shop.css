@@ -1,0 +1,485 @@
+:root {
+  --primary-color: #4daf54;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card4 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: inline-block;
+  /* margin-bottom:-4px; */
+  height: 400px;
+  width: 300px;
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  border-radius: 20%;
+  position: relative;
+  background: linear-gradient(to top, #fc5c7d, #6a82fb);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  /* margin-bottom: -110px; */
+}
+
+.card__img {
+  width: 90%;
+  transition: 0.5s;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card4:hover .card__img {
+  transform: translateY(-50px) rotate(-20deg);
+}
+
+.card__title {
+  color: white;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.card__price {
+  font-weight: 600;
+  font-size: 26px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.card4:hover .card__title {
+  transform: translate(-30px, -72px);
+}
+
+.card4:hover .card__price {
+  transform: translate(-112px, -72px);
+}
+
+.card__size,
+.card__color,
+.card__action {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.card__size {
+  margin-top: 100px;
+}
+
+.card4:hover .card__size,
+.card__color,
+.card__action {
+  transform: translateY(-150px);
+}
+
+.card4:hover .card__size,
+.card4:hover .card__color,
+.card4:hover .card__action {
+  transition-delay: 0.2s;
+  opacity: 1;
+  visibility: visible;
+}
+
+.card__size,
+.card__color {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card__size h3,
+.card__color h3 {
+  font-weight: unset;
+  margin-right: 12px;
+}
+
+.card__size span {
+  padding: 2px 10px;
+  background-color: #dadada;
+  margin: 0 5px;
+  border-radius: 5px;
+  color: #272d40;
+  cursor: pointer;
+}
+
+.card__color span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.card__color span.green {
+  background-color: green;
+}
+.card__color span.red {
+  background-color: red;
+}
+.card__color span.black {
+  background-color: black;
+}
+
+.card__action button {
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  margin-right: 7px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.card__action button:hover {
+  transform: scale(0.9);
+}
+
+.like,
+.cart {
+  font-size: 25px;
+  color: grey;
+  position: absolute;
+  top: 12px;
+  left: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+.card__price {
+  color: white;
+}
+.cart {
+  left: unset;
+  right: 30px;
+}
+
+.wrap {
+  width: 100%;
+  margin-top: 25px;
+  /* margin-left: 10px; */
+  padding: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.coupon {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.coupon-left {
+  float: left;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-radius: 20px;
+  background-color: #00c3ff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+  border-right: 1px dotted blue;
+  overflow: hidden;
+  /* display: flex; */
+  /* align-items: center;
+    justify-content: center; */
+  /* display: inline-block; */
+}
+
+.coupon-con {
+  float: left;
+  width: 270px;
+  height: 150px;
+  position: relative;
+  background: linear-gradient(to right, #00c3ff, #ffff1c);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* .coupon-con::before {
+    content: "";
+    position: absolute;
+    top: -410px;
+    display: block;
+    left: -410px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 400px solid blue;
+    clip: rect(0, auto, 485px, 410px);
+  }
+  .coupon-con::after {
+    content: "";
+    position: absolute;
+    bottom: -410px;
+    display: block;
+    left: -410px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 400px solid yellow;
+    clip: rect(335px, auto, auto, 410px);
+  } */
+.mycoin {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.mycoin span {
+  color: yellow;
+}
+.fa-coins {
+  color: yellow;
+}
+.myvoucher {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.myvoucher span {
+  color: blue;
+}
+/* .qr {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    margin-right: 2px;
+  } */
+.valid {
+  background-color: green;
+  color: white;
+  height: 30px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 55px;
+  margin-top: 10px;
+}
+.sale {
+  height: 100%;
+  width: 120px;
+  /* float: right; */
+  position: absolute;
+  right: 0;
+  /* margin-right: 2px; */
+  /* border: 1px solid black; */
+}
+.sale p {
+  color: white;
+  font-size: 50px;
+}
+.coupon-left p {
+  color: red;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 50px;
+}
+.coupon-left button {
+  background-color: greenyellow;
+  color: white;
+  font-size: 25px;
+  border-radius: 10px;
+  border: none;
+  height: 30px;
+  width: 80px;
+  position: absolute;
+  right: 0;
+  transition: 3s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.coupon-left button:hover {
+  background-color: #4daf54;
+  box-shadow: 1px 1px 0 0 white, 3px 3px 0 0 #4daf54;
+  transform: scale(0.9);
+}
+.coupon-name {
+  /* float: left; */
+  position: absolute;
+  left: 0;
+  width: 150px;
+  color: white;
+}
+.line {
+  /* background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); */
+  text-align: center;
+  font-size: 30px;
+  color: #3b3030;
+  /* text-shadow: 2px 3px #12c2e9; */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+  font-weight: 600;
+  margin-top: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.line :where(.new, .trending, .review, .Reference, .Lefashop) {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}
+.line:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  /* animation: line 20s linear infinite; */
+}
+#navbar {
+  background-color: rgba(51, 51, 51, 0.6); /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  height: 4rem;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#navbar .cube {
+  float: left;
+  display: block;
+  color: white;
+  height: 100%;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#navbar .cube:hover {
+  background-color: #ddd;
+  color: black;
+}
+.dropdown {
+  height: 100%;
+}
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  background-color: #ddd;
+  color: black;
+}
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content .dropt {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content .dropt:hover {
+  background-color: rgb(90, 81, 81);
+}
+
+.show {
+  display: block;
+}
+.logo {
+  height: 100%;
+  width: 100px;
+  float: left;
+  margin-left: 20px;
+}
+.avatar {
+  height: 100%;
+  width: 64px;
+  border-radius: 50%;
+  border: 3px solid #00c3ff;
+  float: right;
+  margin-right: 15px;
+}
+.search-box {
+  float: right;
+  background: transparent;
+  height: 100%;
+  border-radius: 40px;
+  padding: 10px;
+}
+.search-box:hover {
+  background: #2f3640;
+}
+
+.search-box:hover > .search-txt {
+  width: 350px;
+
+  padding: 0 6px;
+}
+.search-box:hover > .search-btn {
+  background: white;
+}
+.search-btn {
+  color: #00c3ff;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 43px;
+  width: 0px;
+}
+.fa-magnifying-glass {
+  font-size: 19px;
+}
