@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;700&family=Caveat:wght@400;600&family=Hurricane&family=Poppins:wght@300;400;500;600;700;800;900&family=Satisfy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Arima", cursive;
+}
+:root {
+  --primary-color: #4daf54;
+}
+
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  z-index: 10000;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.sidebar {
+  width: 245px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(to top, #12c2e9, #c471ed, #f64f59);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+  z-index: 100;
+  transition: width 300ms;
+}
+.sidebar-branch {
+  height: 90px;
+  padding: 1rem 0rem 1rem 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-branch .logo {
+  display: inline-block;
+  padding-right: 1rem;
+}
+.sidebar-menu {
+  margin-top: 1rem;
+}
+.sidebar-menu li {
+  width: 100%;
+  margin-bottom: 1.7rem;
+  padding-left: 2rem;
+}
+.sidebar-menu a {
+  padding-left: 1rem;
+  display: block;
+  color: white;
+  font-size: 1.1rem;
+}
+.sidebar-menu a.active {
+  background: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: pink;
+  border-radius: 30px 0px 0px 30px;
+}
+.sidebar-menu a span:first-child {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+.logo {
+  height: 100%;
+  width: 150px;
+}
+#nav-toggle:checked + .sidebar {
+  width: 70px;
+}
+
+#nav-toggle:checked + .sidebar .sidebar-branch,
+#nav-toggle:checked + .sidebar li a {
+  padding-left: 1rem;
+  text-align: center;
+}
+
+#nav-toggle:checked + .sidebar li a {
+  padding-left: 0rem;
+}
+
+#nav-toggle:checked + .sidebar li .fa-coins {
+  padding: 0;
+}
+#nav-toggle:checked + .sidebar .sidebar-branch h2 span:last-child,
+#nav-toggle:checked + .sidebar li a span:last-child,
+#nav-toggle:checked + .sidebar .sidebar-branch .logo {
+  display: none;
+}
+#nav-toggle:checked ~ .main-content {
+  margin-left: 70px;
+}
+#nav-toggle:checked ~ .main-content header {
+  width: calc(100% - 70px);
+  left: 70px;
+}
+.main-content {
+  transition: margin-left 300ms;
+  margin-left: 245px;
+}
+header {
+  background: linear-gradient(to top, #ed71c4, #f64f59);
+  /* background-color: #f64fa3; */
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 245px;
+  width: calc(100% - 245px);
+  top: 0;
+  z-index: 100;
+  transition: left 300ms;
+}
+#nav-toggle {
+  display: none;
+}
+header h2 {
+  color: #f1f5f9;
+}
+header label span {
+  font-size: 1.7rem;
+  padding-right: 1rem;
+}
+
+.search-wrapper {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+.search-wrapper span {
+  display: inline-block;
+  padding: 0rem 1rem;
+  font-size: 1.5rem;
+}
+.search-wrapper input {
+  height: 100%;
+  padding-left: 1rem;
+
+  border: none;
+  outline: none;
+}
+.user-wrapper {
+  display: flex;
+  align-items: center;
+}
+.user-wrapper img {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.user-wrapper h4 {
+  margin-bottom: 0rem !important;
+}
+.user-wrapper small {
+  display: inline-block;
+  color: #f1f5f9;
+}
+main {
+  margin-top: 85px;
+  padding: 2rem 1.5rem;
+  background: #f1f5f9;
+  min-height: calc(100vh - 90px);
+}
+
+.card4 {
+  margin-left: 2rem;
+  margin-right: 7rem;
+  display: inline-block;
+  /* margin-bottom:-4px; */
+  height: 400px;
+  width: 300px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  border-radius: 20%;
+  position: relative;
+  background: linear-gradient(to top, #fc5c7d, #6a82fb);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  /* margin-bottom: -110px; */
+}
+
+.card__img {
+  width: 90%;
+  transition: 0.5s;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card4:hover .card__img {
+  transform: translateY(-50px) rotate(-20deg);
+}
+
+.card__title {
+  color: white;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.card__price {
+  font-weight: 600;
+  font-size: 26px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.card4:hover .card__title {
+  transform: translate(-30px, -72px);
+}
+
+.card4:hover .card__price {
+  transform: translate(-112px, -72px);
+}
+
+.card__size,
+.card__color,
+.card__action {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.card__size {
+  margin-top: 100px;
+}
+
+.card4:hover .card__size,
+.card__color,
+.card__action {
+  transform: translateY(-150px);
+}
+
+.card4:hover .card__size,
+.card4:hover .card__color,
+.card4:hover .card__action {
+  transition-delay: 0.2s;
+  opacity: 1;
+  visibility: visible;
+}
+
+.card__size,
+.card__color {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card__size h3,
+.card__color h3 {
+  font-weight: unset;
+  margin-right: 12px;
+}
+
+.card__size span {
+  padding: 2px 10px;
+  background-color: #dadada;
+  margin: 0 5px;
+  border-radius: 5px;
+  color: #272d40;
+  cursor: pointer;
+}
+
+.card__color span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.card__color span.green {
+  background-color: green;
+}
+.card__color span.red {
+  background-color: red;
+}
+.card__color span.black {
+  background-color: black;
+}
+
+.card__action button {
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  margin-right: 7px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.card__action button:hover {
+  transform: scale(0.9);
+}
+
+.like,
+.cart {
+  font-size: 25px;
+  color: grey;
+  position: absolute;
+  top: 12px;
+  left: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+.card__price {
+  color: white;
+}
+.cart {
+  left: unset;
+  right: 30px;
+}
+.mycoin {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.mycoin span {
+  color: yellow;
+}
+.fa-coins {
+  color: yellow;
+}

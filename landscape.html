@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dalat</title>
+    <link rel="stylesheet" href="landscape.css" />
+    <link rel="stylesheet" href="landscape__shop.css" />
+    <link
+      rel="stylesheet"
+      href="all.css"
+    />
+  </head>
+  <body>
+    <div id="scroll-progress"></div>
+    <div id="navbar">
+      <a href="index.html"><img src="Image/logo1.png" alt="" class="logo" /></a>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Area</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a class="dropt" href="#">Country</a>
+          <a class="dropt" href="#">City</a>
+          <a class="dropt" href="#">Province</a>
+        </div>
+      </div>
+      <a class="cube" href="#trending">Trending</a>
+      <a class="cube" href="#review">Review</a>
+      <a class="cube" href="#reference">Reference</a>
+      <a class="cube" href="#lefashop">Lefashop</a>
+      <a href="portfolio.html">
+        <img src="Image/profile__user1.jpg" alt="" class="avatar" />
+      </a>
+      <div class="search-box">
+        <input
+          class="search-txt"
+          id="searchbar"
+          type="text"
+          name=""
+          placeholder="Type to Search"
+        />
+        <a href="" class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </div>
+    </div>
+    <div class="box1">
+      <h1>Da Lat</h1>
+    </div>
+    <div class="box2">
+      <div class="option">
+        <div class="card">
+          <i class="fa-solid fa-burger"></i><span>Food & Drinks</span>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-hotel"></i><span>Hotels</span>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-car"></i><span>Transport</span>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-money-check-dollar"></i><span>Banks</span>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-mountain-sun"></i><span>Attractions</span>
+        </div>
+      </div>
+      <!--===================================== WEATHER+CALENDAR =====================================================-->
+      <div class="weather">
+        <div class="weather-detail">
+          <div class="weather-icon">
+            <i class="fa-solid fa-bolt-lightning"></i>
+          </div>
+          <div class="weather-tem">19°C</div>
+          <div class="weather-text">Storm</div>
+        </div>
+        <div class="weather-calendar">
+          <div class="month">
+            <ul class="calendar">
+              <li class="next-left">&#10094;</li>
+              <li class="next-right">&#10095;</li>
+              <li>August<br /><span style="font-size: 18px">2021</span></li>
+            </ul>
+          </div>
+
+          <ul class="calendar weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+          </ul>
+
+          <ul class="calendar days">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li><span class="active">10</span></li>
+            <li>11</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+          </ul>
+        </div>
+      </div>
+      <!--===================================== REVIEW ======================================================-->
+      <div class="review">
+        <main class="site-content">
+          <section class="video-area">
+            <div class="wrapper">
+              <header class="video-header">
+                <h2 class="video-title">Hello Melbourne</h2>
+              </header>
+
+              <div class="video-column">
+                <div class="video-player">
+                  <button id="btnReplay" class="btn-replay">
+                    <span class="fontawesome-refresh"></span>
+                  </button>
+
+                  <video
+                    id="video"
+                    class="video"
+                    src="./Video/video1.webm"
+                    type="video/mp4"
+                    poster="https://i.ytimg.com/vi/TXU4hFD-nMA/0.jpg"
+                    preload="none"
+                  ></video>
+
+                  <div class="video-controls">
+                    <button id="btnState">
+                      <span class="fontawesome-play"></span>
+                    </button>
+
+                    <span id="timePlayed">00:00</span>
+
+                    <div class="video-bars">
+                      <input
+                        type="range"
+                        id="barSeeker"
+                        class="bar-seeker"
+                        value="0"
+                        min="0"
+                        max="100"
+                        step="0.1"
+                      />
+                      <progress
+                        value="0"
+                        max="100"
+                        step="0.1"
+                        id="barProgress"
+                        class="bar-progress"
+                      ></progress>
+                      <progress
+                        value="0"
+                        max="100"
+                        step="0.1"
+                        id="barBuffer"
+                        class="bar-buffer"
+                      ></progress>
+                    </div>
+
+                    <div id="timeBubble" class="time-bubble">00:00</div>
+
+                    <span id="timeDuration">00:00</span>
+
+                    <button id="btnSound" class="btn-sound">
+                      <span class="fontawesome-volume-up"></span>
+                    </button>
+                    <input
+                      type="range"
+                      id="sliderVolume"
+                      class="slider-volume"
+                      value="10"
+                      min="0"
+                      max="10"
+                    />
+                  </div>
+                </div>
+
+                <div class="video-info">
+                  <div class="description">
+                    <p>
+                      Tiếp tục cùng Yuuki trên hành trình thăm thú nước ÚC nhé
+                      cả nhà ơi. Ghé thăm cửa tiệm H&M siêu siêu đẹp, ăn thử các
+                      món ăn châu Á cực ngon ở Melbourne và còn thăm trường đại
+                      học RMIT ngay trung tâm thành phố và thư viện Victoria
+                      State không thể không ghé thăm nữa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="playlist" class="playlist">
+                <header class="next">Coming Next</header>
+
+                <a href="Video/video2.mp4" class="next-video">
+                  <img src="https://i.ytimg.com/vi/EHKa0nv63lw/0.jpg" alt="" />
+                  <h3 class="single-video-title">24h ăn gì ở thành phố Vinh</h3>
+                  <p class="single-video-info">Mỏ khoét Hà Nội</p>
+                  <span class="single-video-des">
+                    Chẳng có chi ngoài một chiếc bụng luôn luôn đói cùng một tâm
+                    hồn ăn uống bất tận. Cùng Mỏ Khoét Hà Nội tham gia hành
+                    trình khám phá 7749 món ăn ngon trên cuộc đời này nhé các
+                    bạn gì ơi!!!
+                  </span>
+                </a>
+
+                <a href="Video/video3.mp4" class="next-video">
+                  <img src="https://i.ytimg.com/vi/1NtV5KgRo0c/0.jpg" alt="" />
+                  <h3 class="single-video-title">
+                    Tìm về Hà Giang: Tuyệt tác thiên nhiên nơi núi rừng Tây Bắc
+                  </h3>
+                  <p class="single-video-info">The Hippy Family</p>
+                  <span class="single-video-des">
+                    Làm quần quật cả tháng mới để đi Hà Giang nên giờ mới có
+                    clip tiếp đây ạ. Lần này nhà mình quay lại Hà Giang, định
+                    cho cả bé Sam đi cùng mà cung phượt này chắc phải lớn xíu
+                    mới đi được.
+                  </span>
+                </a>
+
+                <a href="Video/video4.mp4" class="next-video">
+                  <img src="https://i.ytimg.com/vi/XdpjldY8Be8/0.jpg" alt="" />
+                  <h3 class="single-video-title">
+                    Kinh nghiệm du lịch Sapa 3 ngày 2 đêm tự túc dễ đi nhất
+                  </h3>
+                  <p class="single-video-info">Blog du lịch</p>
+                  <span class="single-video-des"
+                    >Mùa hè bắt đầu đến là lúc không khí oi bức bắt đầu xuất
+                    hiện. Đây cũng chính là lúc thích hợp để du lịch Sapa tìm
+                    cái mát mẻ se lạnh giữa hè. Thay cái oi nóng hằng ngày của
+                    mùa hè mà được thư giãn trong làn sương lạnh Sapa mỗi sáng
+                    thì còn gì bằng đúng không? Bạn đã từng đi du lịch Sapa
+                    chưa, nếu chưa đi thì hãy cùng #BlogDuLịch bật mí những kinh
+                    nghiệm xương máu khi đi du lịch Sapa 3 ngày 2 đêm tự túc
+                    nhé.
+                  </span>
+                </a>
+
+                <a href="Video/video1.webm" class="next-video played-video">
+                  <img src="https://i.ytimg.com/vi/TXU4hFD-nMA/0.jpg" alt="" />
+                  <h3 class="single-video-title">Hello Melbourne</h3>
+                  <p class="single-video-info">Yuuki</p>
+                  <span class="single-video-des"
+                    >Tiếp tục cùng Yuuki trên hành trình thăm thú nước ÚC nhé cả
+                    nhà ơi. Ghé thăm cửa tiệm H&M siêu siêu đẹp, ăn thử các món
+                    ăn châu Á cực ngon ở Melbourne và còn thăm trường đại học
+                    RMIT ngay trung tâm thành phố và thư viện Victoria State
+                    không thể không ghé thăm nữa.
+                  </span>
+                </a>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <!--===================================== REFERENCE ======================================================-->
+
+      <div class="card3">
+        <img
+          class="user__img"
+          src="https://images.unsplash.com/photo-1503457574462-bd27054394c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt=""
+        />
+        <div class="user__info">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            class="user__avatar"
+          />
+          <div class="user__name">Alina</div>
+        </div>
+        <div class="user__icon">
+          <i class="fa-solid fa-heart"></i
+          ><span class="user__number"> 16.5k </span>
+          <i class="fa-solid fa-eye"></i
+          ><span class="user__number"> 27.3k </span>
+        </div>
+      </div>
+      <div class="card3">
+        <img
+          class="user__img"
+          src="https://images.unsplash.com/photo-1657214059493-986710bc4788?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8OHx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt=""
+        />
+        <div class="user__info">
+          <img
+            src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            class="user__avatar"
+          />
+          <div class="user__name">Richard Vokik</div>
+        </div>
+        <div class="user__icon">
+          <i class="fa-solid fa-heart"></i
+          ><span class="user__number"> 6.5k </span>
+          <i class="fa-solid fa-eye"></i
+          ><span class="user__number"> 6.5k </span>
+        </div>
+      </div>
+      <div class="card3">
+        <img
+          class="user__img"
+          src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt=""
+        />
+        <div class="user__info">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            class="user__avatar"
+          />
+          <div class="user__name">Alina</div>
+        </div>
+        <div class="user__icon">
+          <i class="fa-solid fa-heart"></i
+          ><span class="user__number"> 6.5k </span>
+          <i class="fa-solid fa-eye"></i
+          ><span class="user__number"> 6.5k </span>
+        </div>
+      </div>
+      <div class="card3">
+        <img
+          class="user__img"
+          src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt=""
+        />
+        <div class="user__info">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            class="user__avatar"
+          />
+          <div class="user__name">Alina</div>
+        </div>
+        <div class="user__icon">
+          <i class="fa-solid fa-heart"></i
+          ><span class="user__number"> 6.5k </span>
+          <i class="fa-solid fa-eye"></i
+          ><span class="user__number"> 6.5k </span>
+        </div>
+      </div>
+      <div class="card3">
+        <img
+          class="user__img"
+          src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt=""
+        />
+        <div class="user__info">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            class="user__avatar"
+          />
+          <div class="user__name">Alina</div>
+        </div>
+        <div class="user__icon">
+          <i class="fa-solid fa-heart"></i
+          ><span class="user__number"> 6.5k </span>
+          <i class="fa-solid fa-eye"></i
+          ><span class="user__number"> 6.5k </span>
+        </div>
+      </div>
+      <div class="card3">
+        <img
+          class="user__img"
+          src="https://images.unsplash.com/photo-1659535832621-4ef57c0e141b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MzV8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt=""
+        />
+        <div class="user__info">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            class="user__avatar"
+          />
+          <div class="user__name">Alina</div>
+        </div>
+        <div class="user__icon">
+          <i class="fa-solid fa-heart"></i
+          ><span class="user__number"> 6.5k </span>
+          <i class="fa-solid fa-eye"></i
+          ><span class="user__number"> 6.5k </span>
+        </div>
+      </div>
+      <div class="card3">
+        <img
+          class="user__img"
+          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt=""
+        />
+        <div class="user__info">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            class="user__avatar"
+          />
+          <div class="user__name">Alina</div>
+        </div>
+        <div class="user__icon">
+          <i class="fa-solid fa-heart"></i
+          ><span class="user__number"> 6.5k </span>
+          <i class="fa-solid fa-eye"></i
+          ><span class="user__number"> 6.5k </span>
+        </div>
+      </div>
+      <div class="card3">
+        <img
+          class="user__img"
+          src="https://images.unsplash.com/photo-1523287281576-5b596107a6ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGNhbm9lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt=""
+        />
+        <div class="user__info">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            class="user__avatar"
+          />
+          <div class="user__name">Alina</div>
+        </div>
+        <div class="user__icon">
+          <i class="fa-solid fa-heart"></i
+          ><span class="user__number"> 6.5k </span>
+          <i class="fa-solid fa-eye"></i
+          ><span class="user__number"> 6.5k </span>
+        </div>
+      </div>
+      <div class="card3">
+        <img
+          class="user__img"
+          src="https://images.unsplash.com/photo-1588152850700-c82ecb8ba9b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y291bnRyeXNpZGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          alt=""
+        />
+        <div class="user__info">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            class="user__avatar"
+          />
+          <div class="user__name">Alina</div>
+        </div>
+        <div class="user__icon">
+          <i class="fa-solid fa-heart"></i
+          ><span class="user__number"> 6.5k </span>
+          <i class="fa-solid fa-eye"></i
+          ><span class="user__number"> 6.5k </span>
+        </div>
+      </div>
+      <div class="card3">
+        <img
+          class="user__img"
+          src="https://images.unsplash.com/photo-1508693926297-1d61ee3df82a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FuYWRhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt=""
+        />
+        <div class="user__info">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            class="user__avatar"
+          />
+          <div class="user__name">Alina</div>
+        </div>
+        <div class="user__icon">
+          <i class="fa-solid fa-heart"></i
+          ><span class="user__number"> 6.5k </span>
+          <i class="fa-solid fa-eye"></i
+          ><span class="user__number"> 6.5k </span>
+        </div>
+      </div>
+      <div class="card3">
+        <img
+          class="user__img"
+          src="https://images.unsplash.com/photo-1563299796-17596ed6b017?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGNhbXBpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          alt=""
+        />
+        <div class="user__info">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            class="user__avatar"
+          />
+          <div class="user__name">Alina</div>
+        </div>
+        <div class="user__icon">
+          <i class="fa-solid fa-heart"></i
+          ><span class="user__number"> 6.5k </span>
+          <i class="fa-solid fa-eye"></i
+          ><span class="user__number"> 6.5k </span>
+        </div>
+      </div>
+      <div class="card3">
+        <img
+          class="user__img"
+          src="https://images.unsplash.com/photo-1591017403286-fd8493524e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8YmVhY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          alt=""
+        />
+        <div class="user__info">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            class="user__avatar"
+          />
+          <div class="user__name">Alina</div>
+        </div>
+        <div class="user__icon">
+          <i class="fa-solid fa-heart"></i
+          ><span class="user__number"> 6.5k </span>
+          <i class="fa-solid fa-eye"></i
+          ><span class="user__number"> 6.5k </span>
+        </div>
+      </div>
+      <div class="card3">
+        <img
+          class="user__img"
+          src="https://images.unsplash.com/photo-1587502537147-2ba64a62e3d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MjJ8fGxhbmRzY2FwZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt=""
+        />
+        <div class="user__info">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            class="user__avatar"
+          />
+          <div class="user__name">Alina</div>
+        </div>
+        <div class="user__icon">
+          <i class="fa-solid fa-heart"></i
+          ><span class="user__number"> 6.5k </span>
+          <i class="fa-solid fa-eye"></i
+          ><span class="user__number"> 6.5k </span>
+        </div>
+      </div>
+      <div class="card3">
+        <img
+          class="user__img"
+          src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          alt=""
+        />
+        <div class="user__info">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwYXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            class="user__avatar"
+          />
+          <div class="user__name">Alina</div>
+        </div>
+        <div class="user__icon">
+          <i class="fa-solid fa-heart"></i
+          ><span class="user__number"> 6.5k </span>
+          <i class="fa-solid fa-eye"></i
+          ><span class="user__number"> 6.5k </span>
+        </div>
+      </div>
+      <div class="group">
+        <div class="line line5">
+          <span id="lefashop" class="Lefashop">Lefashop</span>
+        </div>
+        <!------------------------------------------ Coin ---------------------------------------->
+        <div class="coin">
+          <div class="mycoin">
+            <strong>My coin:250</strong> <span class="fa-solid fa-coins"></span>
+          </div>
+          <div class="shop">
+            <div class="card4">
+              <span class="like"><i class="fa-solid fa-heart"></i></span>
+              <span class="cart"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></span>
+              <div class="card__img">
+                <img src="Image/landscape__shop1.png" alt="" class="item" />
+              </div>
+              <h2 class="card__title">Nike Zoom KD 12</h2>
+              <p class="card__price">
+                99<span class="fa-solid fa-coins"></span>
+              </p>
+              <div class="card__size">
+                <h3>Size:</h3>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+              </div>
+              <div class="card__color">
+                <h3>Color:</h3>
+                <span class="green"></span>
+                <span class="red"></span>
+                <span class="black"></span>
+              </div>
+              <div class="card__action">
+                <button>Buy now</button>
+                <button>Add cart</button>
+              </div>
+            </div>
+            <div class="card4">
+              <span class="like"><i class="fa-solid fa-heart"></i></span>
+              <span class="cart"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></span>
+              <div class="card__img">
+                <img src="Image/landscape__shop1.png" alt="" class="item" />
+              </div>
+              <h2 class="card__title">Nike Zoom KD 12</h2>
+              <p class="card__price">
+                99<span class="fa-solid fa-coins"></span>
+              </p>
+              <div class="card__size">
+                <h3>Size:</h3>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+              </div>
+              <div class="card__color">
+                <h3>Color:</h3>
+                <span class="green"></span>
+                <span class="red"></span>
+                <span class="black"></span>
+              </div>
+              <div class="card__action">
+                <button>Buy now</button>
+                <button>Add cart</button>
+              </div>
+            </div>
+            <div class="card4">
+              <span class="like"><i class="fa-solid fa-heart"></i></span>
+              <span class="cart"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></span>
+              <div class="card__img">
+                <img src="Image/landscape__shop1.png" alt="" class="item" />
+              </div>
+              <h2 class="card__title">Nike Zoom KD 12</h2>
+              <p class="card__price">
+                99<span class="fa-solid fa-coins"></span>
+              </p>
+              <div class="card__size">
+                <h3>Size:</h3>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+              </div>
+              <div class="card__color">
+                <h3>Color:</h3>
+                <span class="green"></span>
+                <span class="red"></span>
+                <span class="black"></span>
+              </div>
+              <div class="card__action">
+                <button>Buy now</button>
+                <button>Add cart</button>
+              </div>
+            </div>
+            <div class="card4">
+              <span class="like"><i class="fa-solid fa-heart"></i></span>
+              <span class="cart"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></span>
+              <div class="card__img">
+                <img src="Image/landscape__shop1.png" alt="" class="item" />
+              </div>
+              <h2 class="card__title">Nike Zoom KD 12</h2>
+              <p class="card__price">
+                99<span class="fa-solid fa-coins"></span>
+              </p>
+              <div class="card__size">
+                <h3>Size:</h3>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+              </div>
+              <div class="card__color">
+                <h3>Color:</h3>
+                <span class="green"></span>
+                <span class="red"></span>
+                <span class="black"></span>
+              </div>
+              <div class="card__action">
+                <button>Buy now</button>
+                <button>Add cart</button>
+              </div>
+            </div>
+            <div class="card4">
+              <span class="like"><i class="fa-solid fa-heart"></i></span>
+              <span class="cart"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></span>
+              <div class="card__img">
+                <img src="Image/landscape__shop1.png" alt="" class="item" />
+              </div>
+              <h2 class="card__title">Nike Zoom KD 12</h2>
+              <p class="card__price">
+                99<span class="fa-solid fa-coins"></span>
+              </p>
+              <div class="card__size">
+                <h3>Size:</h3>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+              </div>
+              <div class="card__color">
+                <h3>Color:</h3>
+                <span class="green"></span>
+                <span class="red"></span>
+                <span class="black"></span>
+              </div>
+              <div class="card__action">
+                <button>Buy now</button>
+                <button>Add cart</button>
+              </div>
+            </div>
+            <div class="card4">
+              <span class="like"><i class="fa-solid fa-heart"></i></span>
+              <span class="cart"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></span>
+              <div class="card__img">
+                <img src="Image/landscape__shop1.png" alt="" class="item" />
+              </div>
+              <h2 class="card__title">Nike Zoom KD 12</h2>
+              <p class="card__price">
+                99<span class="fa-solid fa-coins"></span>
+              </p>
+              <div class="card__size">
+                <h3>Size:</h3>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+              </div>
+              <div class="card__color">
+                <h3>Color:</h3>
+                <span class="green"></span>
+                <span class="red"></span>
+                <span class="black"></span>
+              </div>
+              <div class="card__action">
+                <button>Buy now</button>
+                <button>Add cart</button>
+              </div>
+            </div>
+            <div class="card4">
+              <span class="like"><i class="fa-solid fa-heart"></i></span>
+              <span class="cart"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></span>
+              <div class="card__img">
+                <img src="Image/landscape__shop1.png" alt="" class="item" />
+              </div>
+              <h2 class="card__title">Nike Zoom KD 12</h2>
+              <p class="card__price">
+                99<span class="fa-solid fa-coins"></span>
+              </p>
+              <div class="card__size">
+                <h3>Size:</h3>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+              </div>
+              <div class="card__color">
+                <h3>Color:</h3>
+                <span class="green"></span>
+                <span class="red"></span>
+                <span class="black"></span>
+              </div>
+              <div class="card__action">
+                <button>Buy now</button>
+                <button>Add cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!----------------------------- Voucher ---------------------------------------->
+        <div class="voucher">
+          <div class="myvoucher">
+            <strong>voucher:250 </strong
+            ><span class="fa-solid fa-ticket"></span>
+          </div>
+
+          <div class="wrap">
+            <div class="coupon">
+              <div class="coupon-left">
+                <p>19days</p>
+                <button type="submit">Show</button>
+              </div>
+              <div class="coupon-con">
+                <div class="valid"><span>Valid</span></div>
+                <div class="coupon-name">
+                  Biệt thự Đà Lạt Ana Mandara villas
+                </div>
+                <div class="sale">
+                  <p>43% OFF</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="coupon">
+              <div class="coupon-left">
+                <p>19days</p>
+                <button type="submit">Show</button>
+              </div>
+              <div class="coupon-con">
+                <div class="valid"><span>Valid</span></div>
+                <div class="coupon-name">
+                  Biệt thự Đà Lạt Ana Mandara villas
+                </div>
+                <div class="sale">
+                  <p>43% OFF</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="coupon">
+              <div class="coupon-left">
+                <p>19days</p>
+                <button type="submit">Show</button>
+              </div>
+              <div class="coupon-con">
+                <div class="valid"><span>Valid</span></div>
+                <div class="coupon-name">
+                  Biệt thự Đà Lạt Ana Mandara villas
+                </div>
+                <div class="sale">
+                  <p>43% OFF</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="coupon">
+              <div class="coupon-left">
+                <p>19days</p>
+                <button type="submit">Show</button>
+              </div>
+              <div class="coupon-con">
+                <div class="valid"><span>Valid</span></div>
+                <div class="coupon-name">
+                  Biệt thự Đà Lạt Ana Mandara villas
+                </div>
+                <div class="sale">
+                  <p>43% OFF</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="coupon">
+              <div class="coupon-left">
+                <p>19days</p>
+                <button type="submit">Show</button>
+              </div>
+              <div class="coupon-con">
+                <div class="valid"><span>Valid</span></div>
+                <div class="coupon-name">
+                  Biệt thự Đà Lạt Ana Mandara villas
+                </div>
+                <div class="sale">
+                  <p>43% OFF</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="coupon">
+              <div class="coupon-left">
+                <p>19days</p>
+                <button type="submit">Show</button>
+              </div>
+              <div class="coupon-con">
+                <div class="valid"><span>Valid</span></div>
+                <div class="coupon-name">
+                  Biệt thự Đà Lạt Ana Mandara villas
+                </div>
+                <div class="sale">
+                  <p>43% OFF</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="coupon">
+              <div class="coupon-left">
+                <p>19days</p>
+                <button type="submit">Show</button>
+              </div>
+              <div class="coupon-con">
+                <div class="valid"><span>Valid</span></div>
+                <div class="coupon-name">
+                  Biệt thự Đà Lạt Ana Mandara villas
+                </div>
+                <div class="sale">
+                  <p>43% OFF</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="coupon">
+              <div class="coupon-left">
+                <p>19days</p>
+                <button type="submit">Show</button>
+              </div>
+              <div class="coupon-con">
+                <div class="valid"><span>Valid</span></div>
+                <div class="coupon-name">
+                  Biệt thự Đà Lạt Ana Mandara villas
+                </div>
+                <div class="sale">
+                  <p>43% OFF</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box3">
+      <footer>
+        <div class="container">
+          <!--Bắt Đầu Nội Dung Giới Thiệu-->
+          <div class="noi-dung about">
+            <h2>About us</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Praesentium dolores alias ipsa vel hic tempore exercitationem
+              ipsam explicabo repudiandae ut consectetur qui, earum at nostrum
+              perspiciatis asperiores necessitatibus facilis esse. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Quia id possimus
+              quibusdam nihil earum in provident enim animi commodi quisquam!
+              Molestiae cupiditate mollitia pariatur error ea, debitis eaque quo
+              dolorum.
+            </p>
+          </div>
+          <!--Kết Thúc Nội Dung Giới Thiệu-->
+          <!--Bắt Đầu Nội Dung Đường Dẫn-->
+          <div class="noi-dung links">
+            <h2>Links</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Trending </a></li>
+              <li><a href="#">Preference</a></li>
+              <li><a href="#">Lefashop</a></li>
+            </ul>
+          </div>
+          <!--Kết Thúc Nội Dung Đường Dẫn-->
+          <!--Bắt Đâu Nội Dung Liên Hệ-->
+          <div class="noi-dung contact">
+            <h2>Contact</h2>
+            <ul class="info">
+              <li>
+                <span><i class="fa fa-map-marker"></i></span>
+                <span>Thành phố Vinh, Nghệ An, Việt Nam</span>
+              </li>
+              <li>
+                <span><i class="fa fa-phone"></i></span>
+                <p><a href="#">+84 011010101</a></p>
+              </li>
+
+              <li><img src="Image/qr3.png" alt="" /></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- <script src="landscape.js"></script> -->
+    <script src="app.js"></script>
+  </body>
+</html>
