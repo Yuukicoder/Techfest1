@@ -592,8 +592,8 @@ progress::-webkit-progress-value {
   /* overflow: hidden; */
   position: relative;
   text-align: center;
-  margin-left: 20px;
-  margin-top: 15px;
+  /* margin-left: 20px;
+  margin-top: 15px; */
   border-radius: 20px;
   width: 100%;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);

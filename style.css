@@ -11,6 +11,7 @@ body {
   width: 100%;
   min-height: 20vh;
   /* background: blue; */
+  scroll-behavior: smooth;
 }
 
 #scroll-progress {
@@ -411,7 +412,8 @@ figcaption {
   width: 350px;
   height: 280px;
   padding: 0;
-  margin-left: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   box-sizing: border-box;
@@ -902,8 +904,7 @@ progress::-webkit-progress-value {
   /* overflow: hidden; */
   position: relative;
   text-align: center;
-  margin-left: 20px;
-  margin-top: 15px;
+
   border-radius: 20px;
   width: 100%;
   /* background-color: blue; */
